@@ -201,11 +201,11 @@ main {
         cursor: pointer;
     }
 }
-
 .hde-warning{
     opacity: 0;
     transform: translateY(-10px);
 }
+
 @media(min-width: 627px){
     header{
         img{
