@@ -179,8 +179,12 @@ main {
     margin-top: 2.4rem;
 
 
-
     opacity: 1;
     transform: translateY(0);
     translation: opacity .4s ease, transform .4s ease;
+}
+
+.hde-warning{
+    opacity: 0;
+    transform: translateY(-10px);
 }
