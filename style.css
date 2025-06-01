@@ -170,7 +170,8 @@ main {
 }
 
 .warning{
-    background: var(--always-white);
+    background: var(--color-danger);
+    color: var(--always-white);
     padding: 1.2rem;
     display: flex;
     justify-content: space-between;
