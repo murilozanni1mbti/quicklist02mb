@@ -37,3 +37,14 @@ function showItemList(){
             `
     })
 }
+
+
+function removeItem(itemName) {
+    const itemIndex = items.findIndex((item) => item.name === itemName)
+
+    if (itemIndex !== -1) {
+        items.splice(itemIndex, 1)
+    }
+
+    showItemsList()
+}

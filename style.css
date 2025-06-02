@@ -1,8 +1,8 @@
-# {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inherit" , sans-serif;
+    font-family: "Inter" , sans-serif;
 }
 
 :root {
@@ -181,7 +181,7 @@ main {
 
     opacity: 1;
     transform: translateY(0);
-    translation: opacity .4s ease, transform .4s ease;
+    transition: opacity .4s ease, transform .4s ease;
 
     div{
         display: flex;
