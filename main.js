@@ -65,3 +65,11 @@ function removeItem(itemName) {
     items.checked = !item.checked
   }
       items[itemIndex].checked = !items[itemIndex].checked
+
+
+
+      Add commentMore actions
+
+function addHideWarningClass() {
+    document.querySelector(".warning").classList.add("hide-warning")
+}
