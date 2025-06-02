@@ -58,4 +58,4 @@ function removeItem(itemName) {
     const itemIndex = items.findIndex((item) => item.name === itemName)
     items.checked = !item.checked
   }
-  
+      items[itemIndex].checked = !items[itemIndex].checked
