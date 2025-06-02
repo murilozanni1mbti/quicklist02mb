@@ -40,11 +40,12 @@ function showItemList(){
 
 
 function removeItem(itemName) {
+ const divWarning = document.querySelector(".warning")
     const itemIndex = items.findIndex((item) => item.name === itemName)
-
+ divWarning.classList.remove("hide-warning")
     if (itemIndex !== -1) {
-        items.splice(itemIndex, 1)
-    }
-
+         setTimeout(() => { 
+      divWarning.classList.add("hide-warning")}
+ 4000) }
     showItemsList()
 }
