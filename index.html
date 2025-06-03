@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link
+       <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
@@ -15,46 +14,41 @@
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-     <script src="./main.js" defer></script>
-    <title>quickList</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+    <title>Quicklist</title>
 </head>
 <body>
     <header>
-        <img src="./assets/logo.png" alt="Logo quickList">
+      <img src="./assets/logo.png" alt="logo quicklist">
 
         <button>
             <i class="ph ph-arrow-left"></i>
-            voltar
+            Voltar
         </button>
-
 
         <h1>Compras da semana</h1>
     </header>
 
-    <main>
+     <main>
         <section class="add-item">
-              <input type="text" placeholder="Adicione um novo item" id="item">
-              <button>Adicionar item</button>
+            <input type="text" placeholder="Adicione um novo item" id="item">
+            <button onclick="addItem()">Adicionar Item</button>
         </section>
 
-        <section class="list">
-           
-           
-        </section>
+        <section class="list"></section>
 
-   <div class="warning hide-warning">
-    <div>
-    <i class="ph ph-warning-circle ph-fill"></i>
-    <span>O item foi removido da lista</span>
-  </div>
-
-<button onclick="addHideWarningClass()">
-   <i class="ph ph-x"></i>
-</button>
-       </div>
+         <div class="warning hide-warning">
+            <div>
+                <i class="ph ph-warning-circle ph-fill"></i>
+                <span>O item foi removido da lista</span>
+            </div>
+            <button onclick="addHideWarningClass()">
+                <i class="ph ph-x"></i>
+            </button>
+        </div>
     </main>
 </body>
 </html>
